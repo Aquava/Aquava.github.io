@@ -53,7 +53,7 @@ function includeHtml() {
 }
 function style() {
   return gulp
-    .src("src\styles\styles.less")
+    .src("src/styles/styles.less")
     .pipe(plumber())
     .pipe(less())
     .pipe(

@@ -89,6 +89,50 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
 }
+input,
+textarea,
+select {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #1f1t1t;
+  font-family: "Open Sans", sans-serif;
+}
+textarea {
+  resize: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #6C6C6C;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #6C6C6C;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #6C6C6C;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #6C6C6C;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #6C6C6C;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -265,6 +309,12 @@ textarea:focus::placeholder {
 .listing__event-card {
   width: calc(33.3333% - 60px);
   margin: 0 30px 120px;
+}
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
 }
 .reserve {
   display: grid;

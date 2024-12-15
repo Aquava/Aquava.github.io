@@ -1,28 +1,39 @@
-
 .reserve {
-    display: grid;
-    gap: 65px 11%;
-    grid-template-columns: 405px calc(89% - 405px);
-    grid-template-areas: 
-      "checks scheme"
-      "order legend"; 
-    width: 100%;
+  .container;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 405px 1fr;
+  gap: 65px 11%;
+  width: 100%;
+  grid-template-areas: 
+  "checkbox scheme"
+  "order legend";
+
+  &__check {
+      grid-area: "check";
   }
-.reserve__checks {
-    grid-area: checks;
+  &__check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
   }
-.reserve__order {
-    grid-area: order;
+  &__check-label {
+      font-size: 16px;
+      font-weight: 400;
   }
-.reserve__scheme {
-    grid-area: scheme;
+  &__scheme {
+      display: flex;
+      flex-direction: column;
+      grid-area: "scheme";
   }
-.reserve__scheme {
-    grid-area: scheme;
+  &__header {
+      align-self: center;
+      margin-bottom: 40px;
   }
-  .reserve > div {
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: coral;
-    text-align: center;
+  &__order {
+      grid-area: "order";
+  }
+  &__legend {
+      grid-area: "legend";
+  }
 }
